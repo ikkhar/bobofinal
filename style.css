@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arvo, Arial, sans-serif;
+	/*background-color: #ededed;*/
+	
+}
+
+#page{
+	background-image: url("hopital.jpg");
+}
+header {
+	text-align: center;
+	padding: 20px;
+}
+/*propriètés photo corps*/
+#corps{
+	height: 498px;
+	width:139px;
+	margin: auto;
+
+}
+/*propriètés pastilles*/
+#disque1, #disque2, #disque3,
+#disque4,#disque5,#disque6 {
+	position: relative;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    opacity: 0.5;
+
+}
+/*début position pastilles*/
+#disque1 {
+	top: -420px;
+	left: -5px;
+}
+
+#disque2 {
+	top: -385px;
+	left: 100px;
+}
+
+#disque3 {
+	top: -385px;
+	left: -9px;
+}
+
+#disque4 {
+	top: -410px;
+	left: 80px;
+}
+
+#disque5 {
+	top: -365px;
+	left: 23px;
+}
+
+#disque6 {
+	top: -325px;
+	left: 65px;
+}
+/*fin position pastilles*/
+
+h1 {
+	font-size: 38px;
+	font-weight: 500;
+	text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000; 
+    color:white;
+}
+
+p {
+	
+	font-size: 14px;
+	padding: 15px 10px;
+	font-weight: bold;
+	
+}
+
+
+ 
+
+aside {
+	padding-left: 20px;
+	float:left;
+}
+
+article {
+	display: none;
+	top: 200px;
+}
+#top{
+
+
+	position: static;
+	text-align: center;
+	margin:auto;
+}
+
+	p{
+
+	border: 1px solid black;
+	background-color: white;
+}
+p:first-child {
+	border-bottom: none;
+}
+p:nth-child(2n){
+	border-top:dashed 1px;
+}
+
+
+/*version grand écran*/
+@media screen and (min-width: 350px){
+	section {
+  display: flex;
+   justify-content: center;
+   padding:30px;
+
+}
+p{
+	width: 150px;
+	line-height: 1.4;
+	border: 1px solid black;
+	
+}
+p:first-child {
+	border-bottom: none;
+}
+p:nth-child(2n){
+	border-top:dashed 1px;
+}
+#corps{
+	margin:0px;
+
+}
+}
+a{
+	text-align: center;
+}
+
+#top{
+	
+
+	position: static;
+	text-align: center;
+	margin:auto;
+
+}
+
+img{
+	border-image: 5px solid black;
+}
+article{-
+	background-color: white !important;
+}
